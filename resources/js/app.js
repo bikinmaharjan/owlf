@@ -14,7 +14,11 @@ Vue.use(VueRouter)
 
 let routes = [
   {path: '/dashboard' , component: require('./components/Dashboard.vue').default},
-  {path: '/profile', component: require('./components/Profile.vue').default}
+  {path: '/profile', component: require('./components/Profile.vue').default},
+  {path: '/active-events', component: require('./components/ActiveEvents.vue').default},
+  {path: '/inactive-events', component: require('./components/InActiveEvents.vue').default},
+  {path: '/create-event', component: require('./components/CreateEvent.vue').default},
+
 ]
 
 const router = new VueRouter({
